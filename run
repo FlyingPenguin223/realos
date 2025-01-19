@@ -1,2 +1,2 @@
 #!/bin/sh
-nasm -f bin -o boot boot.asm && qemu-system-x86_64 -drive file=boot,format=raw
+nasm -f bin -o builds/boot.bin boot.asm && qemu-system-x86_64 -drive file=builds/boot.bin,format=raw
